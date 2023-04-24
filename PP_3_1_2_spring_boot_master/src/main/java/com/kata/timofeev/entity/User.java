@@ -14,8 +14,10 @@ public class User {
 
     @Column(name = "Name")
     private String firstName;
+
     @Column(name = "Surname")
     private String lastName;
+
     @Column(name = "Age")
     private int age;
 

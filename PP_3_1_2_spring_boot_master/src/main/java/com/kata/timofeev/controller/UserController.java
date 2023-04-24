@@ -1,6 +1,7 @@
-package com.kata.timofeev.service;
+package com.kata.timofeev.controller;
 
 import com.kata.timofeev.entity.User;
+import com.kata.timofeev.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,10 +13,10 @@ import java.util.List;
 
 @Controller
 public class UserController {
-    private final UserService userService;
+    private final UserServiceImpl userService;
 
     @Autowired
-    public UserController(UserService userService) {
+    public UserController(UserServiceImpl userService) {
         this.userService = userService;
     }
 
